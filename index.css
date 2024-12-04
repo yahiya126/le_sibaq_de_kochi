@@ -1,5 +1,5 @@
 /* General Styles */
-body {
+.first-section {
     margin: 0;
     padding: 0;
     font-family: 'Arial', sans-serif;
@@ -110,5 +110,106 @@ body {
     .more {
         font-size: 1rem;
         padding: 0.5rem 1rem;
+    }
+}
+
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: #000;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    box-sizing: border-box;
+}
+
+/* Body Styles */
+.second-section {
+    background: url(./asset/STICKER.jpg) no-repeat center;
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.9;
+}
+
+/* Main Container */
+.second-container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(243, 143, 13, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* .card img {
+    width: 4rem;
+    height: 4rem;
+} */
+.card i {
+    font-size: 2rem;
+    color: #E4405F; /* Instagram pink */
+}
+.card h1 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    flex: 1;
+    text-align: left;
+}
+
+/* Text Styles */
+.enjoy, .your-sibaq {
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+/* Feedback Button */
+.feedback-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: rgb(248, 33, 33);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.feedback-btn:hover {
+    background: rgb(200, 0, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card h1 {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .feedback-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
     }
 }
