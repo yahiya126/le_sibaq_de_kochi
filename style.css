@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url(/asset/inaguration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 65rem;
+    background-position: center;  
+    opacity: 0.9; 
+
+}
+.main-container{
+   
+    width: 80%;
+    height: 50rem;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: auto;
+    margin-top: 20%;
+    border-radius: 50px;
+
+}
+.logo{
+    width: 40%;
+    height: 15rem;
+    margin-top: -10rem;
+}
+.sibaq{
+    width: 20rem;
+    height:rem ;
+    margin-top: 2rem;
+}
+.ahia{
+    width: 20rem;
+    margin:2rem 0px 0rem 6rem ;
+}
+
+.more{
+    padding: 2rem 4rem;
+    border: none;
+    background-color: rgba(255, 121, 11, 0.781);
+    border-radius: 25px;
+    font-size: 33px;
+    font-weight: 600;
+    color: rgb(143, 44, 101);
+}
