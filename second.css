@@ -1,138 +1,97 @@
-*{
+/* General Reset */
+* {
     margin: 0;
     padding: 0;
     text-decoration: none;
     color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
-
+    box-sizing: border-box;
 }
-body{
-    background-image: url(./asset/STICKER.jpg);
-    background-repeat: no-repeat;
+
+/* Body Styles */
+body {
+    background: url(./asset/STICKER.jpg) no-repeat center;
     background-size: cover;
-    height: 65rem;
-    background-position: center;  
-    opacity: 0.9; 
-
-}
-.main-container{
-    /* background-image: url(asset/Rectangle\ 3.png); */
-    width: 80% ;
-    height: 50rem;
-    margin: auto;margin-top: 3rem;
-    opacity: 0.9;
-    border-radius: 60px;
-    background-color: rgb(243, 143, 13);
-    /* background-repeat: no-repeat;
-    background-position: center; */
-
-}
-.gallery{
-    width: 80%;
-    margin: auto;
-    background-color: white;
-    height: 8rem;
-    align-items: center;
-    display: flex;
-    flex-direction: column;
-    font-size: 1.2rem;
-    margin-top: 2rem;
-    margin-top: rem;
-    border-radius: 30px;
-}
-.gallery h1{
-    font-size: 1.5rem;
-}
-.gallery img{
-    margin-top: 9px;
-    width: 4rem;
-    height: 4rem;
-    
-}
-.instagram{
-    display: flex;
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    margin-top: 2rem;
-    border-radius: 30px;
-    height: 6rem;
-}
-.instagram img{
-    width: 5.5rem;
-   
-
-}
-.instagram h1{
-    margin-top: 2rem;
-    font-size: 1.2rem;
-   
-}
-
-.youtube{
-    display: flex;
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    margin-top: 2rem;
-    border-radius: 30px;
-    height: 6rem;
-}
-.youtube img{
-    width: 6rem;
-    height: 90px;
-    margin-top: 2px;
-
-}
-.youtube h1{
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    margin-left: 12px;
-}
-
-.telegram{
-    display: flex;
-    background-color: white;
-    width: 80%;
-    margin: auto;
-    margin-top: 2rem;
-    border-radius: 30px;
-    height: 6rem;
-}
-.telegram img{
-    width: 5.5rem;
-   
-}
-.telegram h1{
-    margin-top: 2rem;
-    font-size: 1.2rem;
-    margin-left: 12px;
-}
-.enjoy{
-    color: white;
-    margin-top: 22px;
-    text-align: center;
-    font-size: 1.5rem;
-}
-.your-sibaq{
-    color: white;
-    text-align: center;
-    margin-top: 12px;
-    font-size: 1.5rem;
-}
-.review{
-    width: 80%;
-    background-color: rgb(248, 33, 33);
-    height: 6rem;
-    text-align: center;
-    margin: auto;
-    margin-top: 3rem;
-    border-radius: 30PX;
-    font-size: 44PX;
-    font-weight: 800;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
+    opacity: 0.9;
 }
 
+/* Main Container */
+.main-container {
+    width: 90%;
+    max-width: 800px;
+    background: rgba(243, 143, 13, 0.95);
+    padding: 2rem;
+    border-radius: 20px;
+    text-align: center;
+}
+
+/* Cards */
+.card {
+    background: #fff;
+    margin: 1rem 0;
+    padding: 1rem;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+    width: 4rem;
+    height: 4rem;
+}
+
+.card h1 {
+    font-size: 1.2rem;
+    margin-left: 1rem;
+    flex: 1;
+    text-align: left;
+}
+
+/* Text Styles */
+.enjoy, .your-sibaq {
+    color: #fff;
+    margin: 1rem 0;
+    font-size: 1.5rem;
+}
+
+/* Feedback Button */
+.feedback-btn {
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem 2rem;
+    background: rgb(248, 33, 33);
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+    border-radius: 20px;
+    text-align: center;
+    transition: background 0.3s ease-in-out;
+}
+
+.feedback-btn:hover {
+    background: rgb(200, 0, 0);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .card {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .card h1 {
+        margin-left: 0;
+        margin-top: 0.5rem;
+    }
+
+    .feedback-btn {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}

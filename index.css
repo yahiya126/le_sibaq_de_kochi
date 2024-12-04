@@ -1,0 +1,114 @@
+/* General Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+    background-image: url(./asset/inaguration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #333;
+    opacity: 0.95;
+}
+
+/* Main Container */
+.main-container {
+    width: 90%;
+    max-width: 1200px;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+
+/* Images */
+.logo {
+    max-width: 300px;
+    width: 70%;
+    height: auto;
+    margin-bottom: 1.5rem;
+}
+
+.sibaq {
+    max-width: 200px;
+    width: 50%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+.ahia {
+    max-width: 200px;
+    width: 50%;
+    height: auto;
+    margin: 1rem 0;
+}
+
+/* Button */
+.more {
+    padding: 1rem 2rem;
+    border: none;
+    background-color: #ff790b;
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    border-radius: 50px;
+    cursor: pointer;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transition: all 0.3s ease-in-out;
+}
+
+.more:hover {
+    background-color: #e66404;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .main-container {
+        padding: 1.5rem;
+    }
+
+    .logo {
+        width: 60%;
+        margin-bottom: 1rem;
+    }
+
+    .sibaq, .ahia {
+        width: 60%;
+        margin: 0.5rem 0;
+    }
+
+    .more {
+        font-size: 1.2rem;
+        padding: 0.8rem 1.5rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .main-container {
+        width: 95%;
+        padding: 1rem;
+    }
+
+    .logo {
+        width: 80%;
+    }
+
+    .sibaq, .ahia {
+        width: 80%;
+    }
+
+    .more {
+        font-size: 1rem;
+        padding: 0.5rem 1rem;
+    }
+}
