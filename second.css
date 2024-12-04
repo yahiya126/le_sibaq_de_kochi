@@ -41,11 +41,14 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.card img {
+/* .card img {
     width: 4rem;
     height: 4rem;
+} */
+.card i {
+    font-size: 2rem;
+    color: #E4405F; /* Instagram pink */
 }
-
 .card h1 {
     font-size: 1.2rem;
     margin-left: 1rem;
