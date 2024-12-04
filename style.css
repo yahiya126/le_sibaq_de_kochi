@@ -1,7 +1,7 @@
 body{
     margin: 0;
     padding: 0;
-    background-image: url(/asset/inaguration.png);
+    background-image: url(./asset/inaguration.png);
     background-repeat: no-repeat;
     background-size: cover;
     height: 65rem;
@@ -11,7 +11,7 @@ body{
 }
 .main-container{
    
-    width: 80%;
+    width: 80%; 
     height: 50rem;
     background-color: white;
     display: flex;

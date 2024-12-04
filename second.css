@@ -7,7 +7,7 @@
 
 }
 body{
-    background-image: url(asset/STICKER.jpg);
+    background-image: url(./asset/STICKER.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 65rem;
